@@ -1,20 +1,66 @@
-#logoBar{
+#logoBar {
   width: 30vw;
   height: 100vh;
 }
-#siteLogo{
+#siteLogo {
   width: 100%;
 }
 body {
   display: flex;
+  background-color: darkcyan;
 }
-#staffGallery{
+#staffGallery {
   width: 70vw;
-  display: inherit;
-
+  display: flex;
+  flex-wrap: wrap;
 }
-.galleryImage{
+.galleryImage {
   width: 100%;
   height: auto;
   height: 300px;
 }
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: expanded;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  height: 350px;
+  margin: 5px;
+}
+.characterName {
+  display: flex;
+  color: black;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #logoBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  #staffGallery{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+  
